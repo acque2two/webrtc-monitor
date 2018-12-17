@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>ICTSC Chat</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css" type="text/css" media="all">
+</head>
+<body>
+  <main>
+    <div class="chat-widget">
+      <div class="control-box">
+        <input type="text" id="room-name" placeholder="Room name"
+               inputmode="latin" size=15 maxlength=10>
+        <button id="connect-button">
+          Connect
+        </button>
+      </div>
+      <div class="message-box" id="message-box">
+      </div>
+      <div class="chat-box">
+        <input type="text" id="message" placeholder="Message text"
+               inputmode="latin" size=40 maxlength=120 disabled>
+        <button id="send-button" disabled>
+          Send
+        </button>
+      </div>
+    </div>
+    <div class="webrtc-media" id="webrtc-media"></div>
+  </main>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.slim.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
